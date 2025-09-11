@@ -12,6 +12,7 @@ public class first_day_04 {
 		int[] ages = new int[size];
 		String[] hobbies = new String[size];
 
+		
 		names[0] = name1;
 		names[1] = name2;
 		ages[0] = age1;
@@ -19,12 +20,14 @@ public class first_day_04 {
 		hobbies[0] = "youtube";
 		hobbies[1] = "game";
 
+		
 		Person park = new Person();
 		park.name = names[0];
 		park.age = ages[0];
 		park.hobby = hobbies[0];
 //		System.out.printf("나의 이름은 %s 나이는 %d 취미는 %s", park.name, park.age, park.hobby);
 
+		
 		Person min = new Person();
 		min.name = names[1];
 		min.age = ages[1];
