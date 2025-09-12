@@ -22,9 +22,11 @@ public class first_day_03 {
 		case 1:
 			System.out.println("LIVE수강");
 			break;
+			
 		case 2:
 			System.out.println("월말평가");
 			break;
+			
 		case 3:
 			System.out.println("과목평가");
 			break;
