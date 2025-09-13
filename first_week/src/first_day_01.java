@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class first_day {
+public class first_day_01 {
 	public static void main(String[] args) {
 // ctrl + shift + f 자동 탭 정리
 // 자료형, 변수선언 if, for switch while
