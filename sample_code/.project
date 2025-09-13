@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>sample_code</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Array04_1_얕은복사.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/list/Array04_1_%EC%96%95%EC%9D%80%EB%B3%B5%EC%82%AC.java</locationURI>
+		</link>
+		<link>
+			<name>src/Array04_2_깊은복사.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/list/Array04_2_%EA%B9%8A%EC%9D%80%EB%B3%B5%EC%82%AC.java</locationURI>
+		</link>
+		<link>
+			<name>src/Array04_3_복사메서드.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/list/Array04_3_%EB%B3%B5%EC%82%AC%EB%A9%94%EC%84%9C%EB%93%9C.java</locationURI>
+		</link>
+		<link>
+			<name>src/Array99_PrintTest.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/list/Array99_PrintTest.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
