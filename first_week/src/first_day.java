@@ -55,11 +55,56 @@ public class first_day {
 //		System.out.println(((Object)darr[0]).getClass().getSimpleName()); // Double
 //		System.out.println(((Object)carr[0]).getClass().getSimpleName()); // Character
 //		System.out.println(((Object)barr[0]).getClass().getSimpleName()); // Boolean
-		int[] original = {1,2,3};
-		int[] copyarr = original;
+
+		// 얕은 복사
+//		int[] original = {1,2,3};
+//		int[] copyarr = original;
+//		
+//		copyarr[0] = 10;
+//		System.out.println(Arrays.toString(original));
+//		System.out.println(Arrays.toString(copyarr));
+
+		// 깊은 복사
+//		int[] original = { 1, 2, 3 };
+//		int[] deepcopyarr = new int[original.length];
+//		for (int i = 0; i < deepcopyarr.length; i++) {
+//			deepcopyarr[i] = original[i];
+//		}
+//		original[0] = 10;
+//		System.out.println(Arrays.toString(original));
+//		System.out.println(Arrays.toString(deepcopyarr));
+//
+//		// copyOf
+//		int[] deep2arr = Arrays.copyOf(original, original.length);
+//		original[0] = 20;
+//		System.out.println(Arrays.toString(original));
+//		System.out.println(Arrays.toString(deep2arr));
+//
+//		// copyOfRange
+//		original = new int[] { 1, 2, 3, 4, 5 };
+//		int[] deep3arr = Arrays.copyOfRange(original, 1, original.length - 1);
+//		System.out.println(Arrays.toString(original));
+//		System.out.println(Arrays.toString(deep3arr));
 		
-		copyarr[0] = 10;
-		System.out.println(Arrays.toString(original));
-		System.out.println(Arrays.toString(copyarr));
+//		int[] nums = {64, 53, 123, 23, 444, 98, 12};
+//		
+//		int minnum = Integer.MAX_VALUE / 2;
+//		int maxnum = -minnum;
+//		System.out.println(minnum);
+//		System.out.println(maxnum);
+//		int total = 0;
+//		for (int i : nums) {
+//			if (i < minnum) {
+//				minnum = i;
+//			}
+//			if (i > minnum) {
+//				maxnum = i;
+//			}
+//			total += i;
+//		}
+//		System.out.println(minnum);
+//		System.out.println(maxnum);
+//		System.out.println(total);
+//		System.out.println((double) total/nums.length);
 	}
 }
