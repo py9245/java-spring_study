@@ -1,4 +1,4 @@
-package first_week;
+
 
 public class Person {
 	String name;
