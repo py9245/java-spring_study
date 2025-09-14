@@ -7,3 +7,6 @@
 - 변수선언, if, for while, switch
 - class 기초개념
 ### second day
+- this의 개념, 오버로딩의 개념
+- 각 메모리 영역
+- JVM memory heap, stack, method 영역 등 개념 공부
