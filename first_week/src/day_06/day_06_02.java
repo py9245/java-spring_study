@@ -1,4 +1,4 @@
-package day_066;
+package day_06;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -10,6 +10,7 @@ public class day_06_02 {
 	public static void main(String[] args) throws IOException {
 		System.setIn(new FileInputStream("res/input.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
 		
 	}
 }
