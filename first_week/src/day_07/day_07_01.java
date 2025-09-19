@@ -54,12 +54,10 @@ public class day_07_01 {
             long answer = 0;
             
             for (int step = 0; step <= 4000 && microbes.size() > 1; step++) {
-                // 이동 단계
                 for (int i = microbes.size() - 1; i >= 0; i--) {
                     Microbe m = microbes.get(i);
                     m.move();
                     
-                    // 경계 밖으로 나간 미생물 제거
                     if (m.isOutOfBounds()) {
                         microbes.remove(i);
                     }
