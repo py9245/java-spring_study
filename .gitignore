@@ -13,6 +13,11 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+#커스텀
+.claude
+settings.local.json
+spring_board_guide_for_claude.md
+spring_board_guide.md
 
 # External tool builders
 .externalToolBuilders/
