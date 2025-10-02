@@ -1,28 +1,26 @@
 import java.util.*;
-import java.io.FileInputStream;
+import java.io.*;
+
 
 class Solution {
-    public static void main(String args[]) throws Exception {
-        System.setIn(new FileInputStream("res/input.txt"));
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-
-        for (int test_case = 1; test_case <= T; test_case++) {
-            int n = sc.nextInt();
-            String line = sc.next();
-
-            int ans = 0;
-            int current = 0;
-
-            for (int i = 0; i < n; i++) {
-                if (line.charAt(i) == '0') {
-                    current = 0;
-                } else {
-                    current += 1;
-                    ans = Math.max(ans, current);
-                }
-            }
-            System.out.printf("#%d %d%n", test_case, ans);
-        }
+    public static void main(String args[]) throws IOException {
+    	System.setIn(new FileInputStream("res/input.txt"));
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	int T = Integer.parseInt(br.readLine());
+    	int N, M, K;
+    	StringTokenizer st = new StringTokenizer(br.readLine());
+    	N = Integer.parseInt(st.nextToken());
+    	M = Integer.parseInt(st.nextToken());
+    	K = Integer.parseInt(st.nextToken());
+    	Map<Integer, ArrayList<int[]> > tiket = new HashMap<>(); 
+    	for (int i = 0; i < K; i++) {
+    		StringTokenizer line = new StringTokenizer(br.readLine());
+    		int[] item = new int[3];
+    		int keyidx = Integer.parseInt(line.nextToken());
+			for (int j = 2; j >= 0; j--) {
+				item[j] = Integer.parseInt(line.nextToken());
+			}
+			tiket[i].append(item)
+		}
     }
 }

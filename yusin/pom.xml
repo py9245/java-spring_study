@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ssafy</groupId>
+  <artifactId>yusin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>HelloMaveb</name>
+  <properties>
+	<jdk.version>17</jdk.version>
+	<maven.compiler.release>${jdk.version}</maven.compiler.release>
+	<jakarta.servelt.version>6.0.0</jakarta.servelt.version>
+	<jakarta.servelt.jsp-api.version>4.0.0</jakarta.servelt.jsp-api.version>
+  </properties>
+  
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>${jakarta.servelt.version}</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
+<dependency>
+    <groupId>jakarta.servlet.jsp</groupId>
+    <artifactId>jakarta.servlet.jsp-api</artifactId>
+    <version>${jakarta.servelt.jsp-api.version}</version>
+    <scope>provided</scope>
+</dependency>
+  </dependencies>
+</project>
