@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block Navigator Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <canvas id="gameCanvas" width="1280" height="1280"></canvas>
+
+    <div id="hud" class="hud hidden">
+      <div class="hud-item">
+        <span class="label">현재 점수</span>
+        <span id="scoreValue" class="value">0</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">경과 시간</span>
+        <span id="timeValue" class="value">0.0s</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">강제 이동</span>
+        <span id="forceTimerValue" class="value">1.00s</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">선택</span>
+        <span id="selectedValue" class="value">없음</span>
+      </div>
+    </div>
+
+    <div id="menu" class="overlay visible">
+      <h1>Block Navigator</h1>
+      <p class="tagline">Q/W/E 블록을 선택하고 ↑/↓ 키로 회색 구간을 유지하세요.</p>
+      <button id="startButton" class="btn primary">게임 시작</button>
+      <div class="menu-stats">
+        <span>최고 점수: <span id="menuHighScore">0</span></span>
+      </div>
+      <div class="hint">* Q/W/E 키로 복수 선택이 가능합니다.</div>
+    </div>
+
+    <div id="gameOver" class="overlay">
+      <h2>Game Over</h2>
+      <p id="gameOverReason" class="tagline"></p>
+      <div class="menu-stats">
+        <span>최종 점수: <span id="finalScore">0</span></span>
+        <span>최고 점수: <span id="finalHighScore">0</span></span>
+      </div>
+      <div id="newRecord" class="new-record hidden">신기록!</div>
+      <div class="actions">
+        <button id="retryButton" class="btn primary">다시 도전</button>
+        <button id="menuButton" class="btn">메인 메뉴</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
